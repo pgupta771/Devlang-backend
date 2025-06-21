@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: devlang-backend
+    env: java
+    buildCommand: "./mvnw clean package"
+    startCommand: "java -jar target/devlang-compiler-0.0.1-SNAPSHOT.jar"
+    plan: free
